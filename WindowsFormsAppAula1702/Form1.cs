@@ -30,10 +30,10 @@ namespace WindowsFormsAppAula1702
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int val1 = 0, val2 = 0, total = 0;
-            val1 = Int32.Parse(txtval1.Text);
-            val2 = Int32.Parse(txtval2.Text);
-            total = val1 + val2;
+            
+            int val1 = Int32.Parse(txtval1.Text);
+            int val2 = Int32.Parse(txtval2.Text);
+            int total = val1 + val2;
 
             lbltotal.Text = Convert.ToString(total);
 
@@ -47,40 +47,39 @@ namespace WindowsFormsAppAula1702
 
         private void btnSubtrair_Click(object sender, EventArgs e)
         {
-            int val1 = 0, val2 = 0, total = 0;
-            val1 = Int32.Parse(txtval1.Text);
-            val2 = Int32.Parse(txtval2.Text);
+            int val1 = Int32.Parse(txtval1.Text);
+            int val2 = Int32.Parse(txtval2.Text);
 
-            total = val1 - val2;
+            int total = val1 - val2;
 
             lbltotal.Text = Convert.ToString(total);
         }
 
         private void btnDividir_Click(object sender, EventArgs e)
         {
-            int val1 = 0, val2 = 0, total = 0;
             
-            val1 = Int32.Parse(txtval1.Text);
-            val2 = Int32.Parse(txtval2.Text);
+
+            int val1 = int.Parse(txtval1.Text);
+            int val2 = int.Parse(txtval2.Text);
             if (val2 == 0 || val1 == 0)
             {
                 MessageBox.Show("divide por 0 não faz favor");
             }
             else
             {
-                total = val1 / val2;
+                int total = val1 / val2;
+                lbltotal.Text = Convert.ToString(total);
             }
 
-            lbltotal.Text = Convert.ToString(total);
         }
 
         private void btnMult_Click(object sender, EventArgs e)
         {
-            int val1 = 0, val2 = 0, total = 0;
-            val1 = Int32.Parse(txtval1.Text);
-            val2 = Int32.Parse(txtval2.Text);
+            
+            int val1 = Int32.Parse(txtval1.Text);
+            int val2 = Int32.Parse(txtval2.Text);
 
-            total = val1 * val2;
+            int total = val1 * val2;
 
             lbltotal.Text = Convert.ToString(total);
         }
